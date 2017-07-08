@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class UserPagesTest < ActionDispatch::IntegrationTest
-  
+    
   test "should get new user page" do
     get new_user_registration_url
     assert :success

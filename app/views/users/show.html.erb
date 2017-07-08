@@ -1,0 +1,14 @@
+<div class="row">
+  <aside class="col-md-12">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.email %>
+      </h1>
+      <ul class="nav navbar-nav">
+      	<li><%= link_to "Edit account", edit_user_registration_path %></li>
+      	<li><%= link_to "Delete account", user_registration_path, method: :delete %></li>
+      </ul>
+    </section>
+  </aside>
+</div>
